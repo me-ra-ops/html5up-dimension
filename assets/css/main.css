@@ -1659,39 +1659,53 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-		/* EVENT GRID */
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+		/* WIDER ARTICLE FOR EVENTS */
+#main article {
+  width: 70rem;
+  max-width: 95vw;
+}
+
+/* FORCE GRID */
+#work .event-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  width: 100%;
 }
 
 /* EVENT CARD */
-.event-card {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
+#work .event-card {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.event-card:hover {
-  transform: scale(1.05);
-}
-
-.event-card img {
+#work .event-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.event-card h3 {
-  margin: 1rem 0 0.3rem;
+#work .event-card h3 {
+  margin: 0.8rem 0 0.2rem;
 }
 
-.event-card p {
+#work .event-card p {
   font-size: 0.85rem;
   opacity: 0.8;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 980px) {
+  #work .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #work .event-grid {
+    grid-template-columns: 1fr;
+  }
 }
