@@ -1721,6 +1721,6 @@ input, select, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 40rem auto;
+  padding-left: 20rem;
   animation: breathe 3s ease-in-out infinite;
 }
