@@ -1716,7 +1716,7 @@ input, select, textarea {
   100% { transform: scale(1); opacity: 0.85; }
 }
 
-#header .logo img {
+#header .logomy img {
   width: 5rem;
   display: flex;
   justify-content: center;
