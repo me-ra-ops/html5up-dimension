@@ -1717,5 +1717,6 @@ input, select, textarea {
 }
 
 #header .logo img {
+  width: 5rem;
   animation: breathe 3s ease-in-out infinite;
 }
