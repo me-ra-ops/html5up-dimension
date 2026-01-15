@@ -1773,7 +1773,7 @@ input, select, textarea {
     grid-row: span 1;
   }
 }
-<<<<<<< HEAD
+
 
 @media screen and (max-width: 600px) {
   #DHRUVA .event-grid {
@@ -1865,5 +1865,3 @@ input, select, textarea {
   font-weight: bold;
   color: #ff9f1c;
 }
-=======
->>>>>>> ed61bbfaff619130152f179e82c393e767e4dcba
