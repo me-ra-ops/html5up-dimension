@@ -188,15 +188,116 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
-			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
-		}
+		/* MAIN ABOUT SECTION */
+/* ABOUT SECTION */
+#about {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #5b78c7, #000000);
+    overflow: hidden;
+}
+
+/* Left slanted panel */
+.about-left-panel {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 600px;
+    height: 100%;
+    background: #02104b;
+    transform: skewX(-20deg);
+    z-index: 1;
+}
+
+/* Inner content */
+.about-inner {
+    position: relative;
+    z-index: 2;
+    padding: 80px;
+    color: white;
+}
+
+/* Box container */
+.about-box-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+/* Common box style */
+.about-box {
+    position:absolute;
+    width: 190px;
+    height: 190px;
+    border: 3px solid white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Box text */
+.about-box span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Individual positions */
+.box1 {
+    top: 0;
+    left: 120px;
+}
+
+.box2 {
+    top: 120px;
+    left: 0;
+}
+
+.box3 {
+    top: 160px;
+    left: 160px;
+}
+
+/* Hover pop-up effect */
+.about-box:hover {
+    transform: scale(1.12);
+    z-index: 10;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* Popup background */
+#about-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 100;
+}
+
+/* Popup box */
+.popup {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 50px;
+  width: 500px;
+  display: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.popup span {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 
 	h1 {
 		font-size: 2.25rem;

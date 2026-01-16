@@ -299,15 +299,47 @@
 								<p>The mission of the MrBallen Foundation is to honor victims and support families of heinous crimes through education, training and financial support.<br>Real stories have been shared by the MrBallen Foundation to raise awareness and shift public understanding around the impact of violent crime on victims and their families.
 Training sessions have equipped Partners with expert insights and practical tools to strengthen support for victims and survivors in their care.
 Has been given by the MrBallen Foundation through Honor Grants, Hope Grants, and Rapid Response Grants to empower partner organizations and deliver support after tragedy.</p>
-							</article>			
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
+							
+							
+							
+						<!--about-->
+<article id="about">
 
-						<!-- Contact -->
+    <!-- Left slanted panel -->
+    <div class="about-left-panel"></div>
+
+    <!-- About content -->
+    <div class="about-inner">
+        <h1 class="major"><strong>THE<br>14th<br> EDITION<br></strong></h1>
+
+        <!-- Overlapping boxes -->
+        <div class="about-box-container">
+            <div class="about-box box1" onclick="openAboutPopup('Mission')">
+                <span>Mission</span>
+            </div>
+
+            <div class="about-box box2" onclick="openAboutPopup('Vision')">
+                <span>Vision</span>
+            </div>
+
+            <div class="about-box box3" onclick="openAboutPopup('Values')">
+                <span>Values</span>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+<!-- Popup -->
+<div id="about-popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeAboutPopup()">×</span>
+        <p id="popup-text"></p>
+    </div>
+</div>
+
+						<!---- Contact ---->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<form method="post" action="#">
